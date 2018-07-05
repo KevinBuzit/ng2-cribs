@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Crib } from './../crib';
 
 @Component({
   selector: 'app-crib-card',
@@ -6,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./crib-card.component.css']
 })
 export class CribCardComponent implements OnInit {
-  @Input('crib') crib: any;
+  @Input('crib') crib: Crib;
   constructor() { }
 
   ngOnInit() {
